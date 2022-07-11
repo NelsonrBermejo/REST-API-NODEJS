@@ -11,8 +11,10 @@ router.get('/', (req, res) =>{
 router.post('/', (req, res)=>{
     const { title, director, year, rating } = req.body;
     if(title && director && year && rating) {
-        const newMovie = {...req.body}
-         res.json('saved');
+       const id = movies.length + 1;
+       const newMovie = {...req.body, id};
+       console.log(newMovie);
+       res.json('saved');
     }else{
         res.send('Wrong Request');
     }
