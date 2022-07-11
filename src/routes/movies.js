@@ -13,6 +13,7 @@ router.post('/', (req, res)=>{
     if(title && director && year && rating) {
        const id = movies.length + 1;
        const newMovie = {...req.body, id};
+       movies.push(newMovie);
        console.log(newMovie);
        res.json('saved');
     }else{
