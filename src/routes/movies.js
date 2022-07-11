@@ -14,6 +14,7 @@ router.post('/', (req, res)=>{
        const id = movies.length + 1;
        const newMovie = {...req.body, id};
        movies.push(newMovie);
+       res.json(movies);
        console.log(newMovie);
        res.json('saved');
     }else{
