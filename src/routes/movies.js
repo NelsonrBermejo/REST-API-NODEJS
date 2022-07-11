@@ -15,10 +15,8 @@ router.post('/', (req, res)=>{
        const newMovie = {...req.body, id};
        movies.push(newMovie);
        res.json(movies);
-       console.log(newMovie);
-       res.json('saved');
     }else{
-        res.send('Wrong Request');
+        res.json({error:'There was an error.'});
     }
     res.send('received');
 });
