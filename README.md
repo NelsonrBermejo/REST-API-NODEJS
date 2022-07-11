@@ -15,3 +15,5 @@ BODY: raw
     "year": "1991",
     "rating": "11"
 }
+
+para validar datos se puede utilizar express-validator

@@ -9,9 +9,14 @@ router.get('/', (req, res) =>{
 });
 
 router.post('/', (req, res)=>{
-    console.log(req.body);
+    const { title, director, year, rating } = req.body;
+    if(title && director && year && rating) {
+        res.json('saved');
+    }else{
+        res.send('Wrong Request');
+    }
     res.send('received');
-})
+});
 
 
 module.exports = router;
