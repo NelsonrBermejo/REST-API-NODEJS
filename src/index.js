@@ -13,6 +13,7 @@ app.use(express.json());
 
 //routes
 app.use(require('./routes/movies'));
+app.use(require('./routes/index'));
 
 
 //starting the server
