@@ -40,7 +40,7 @@ http://localhost:3000/api/movies/1
 /******************JSONPLACEHOLDER*********************/
 para poder utilizar este servicio agregar:
 
-npm i node-fetch
+npm install node-fetch@2.6.1
 
 
 https://jsonplaceholder.typicode.com/
