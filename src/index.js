@@ -14,6 +14,7 @@ app.use(express.json());
 //routes
 app.use('/api/movies',require('./routes/movies'));
 app.use(require('./routes/index'));
+app.use('/api/users', require('./routes/users'));
 
 
 //starting the server

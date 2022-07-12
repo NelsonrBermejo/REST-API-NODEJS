@@ -19,6 +19,9 @@ BODY: raw
 para validar datos se puede utilizar express-validator
 
 POSTMAN DELETE
+
+npm i underscore
+
 elimina el id 2
 http://localhost:3000/api/movies/2
 
@@ -33,3 +36,13 @@ http://localhost:3000/api/movies/1
     "rating": "9.7"
    
 }
+
+/******************JSONPLACEHOLDER*********************/
+para poder utilizar este servicio agregar:
+
+npm i node-fetch
+
+
+https://jsonplaceholder.typicode.com/
+rutas de servicio:
+https://jsonplaceholder.typicode.com/users
