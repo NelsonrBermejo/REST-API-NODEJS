@@ -19,5 +19,17 @@ BODY: raw
 para validar datos se puede utilizar express-validator
 
 POSTMAN DELETE
-
+elimina el id 2
 http://localhost:3000/api/movies/2
+
+POSTMAN PUT
+actualiza en el id uno con los nuevos datos
+http://localhost:3000/api/movies/1
+
+{
+    "title": "Toy Story",
+    "director": "jejeje",
+    "year": "1991",
+    "rating": "9.7"
+   
+}
