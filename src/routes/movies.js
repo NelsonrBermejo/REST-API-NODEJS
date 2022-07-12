@@ -28,7 +28,7 @@ router.delete('/:id', (req, res) => {
             movies.slice(i, 1);
         }
     });
-    
+    res.send(movies);
 });
 
 
