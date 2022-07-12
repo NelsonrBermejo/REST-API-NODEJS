@@ -17,7 +17,7 @@ router.post('/', (req, res)=>{
        movies.push(newMovie);
        res.json(movies);
     }else{
-        res.json({error:'There was an error.'});
+        res.status(500).json({error:'There was an error.'});
     }
     res.send('received');
 });
@@ -26,7 +26,7 @@ router.delete('/:id', (req, res) => {
     const {id} = req.params;
     _.each(movies, (movie, i)=>{
         if(movie.id == id){
-            movies.slice(i, 1);
+            movies.splice(i, 1);
         }
     });
     res.send(movies);

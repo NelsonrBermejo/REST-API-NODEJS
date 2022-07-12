@@ -17,3 +17,7 @@ BODY: raw
 }
 
 para validar datos se puede utilizar express-validator
+
+POSTMAN DELETE
+
+http://localhost:3000/api/movies/2
