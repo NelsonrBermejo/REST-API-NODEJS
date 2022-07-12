@@ -1,5 +1,6 @@
 const {Router} = require ('express');
 const router = Router();
+const _= require('underscore');
 
 const movies = require('../sample.json');
 
@@ -19,6 +20,15 @@ router.post('/', (req, res)=>{
         res.json({error:'There was an error.'});
     }
     res.send('received');
+});
+
+router.delete('/:id', (req, res) => {
+    _.each(movies, (movie, i)=>{
+        if(movie.id == id){
+            movies.slice(i, 1);
+        }
+    });
+    res.send('deleted');
 });
 
 
