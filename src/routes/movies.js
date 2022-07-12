@@ -23,6 +23,7 @@ router.post('/', (req, res)=>{
 });
 
 router.delete('/:id', (req, res) => {
+    const {id} = req.params;
     _.each(movies, (movie, i)=>{
         if(movie.id == id){
             movies.slice(i, 1);
